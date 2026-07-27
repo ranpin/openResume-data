@@ -1,0 +1,18 @@
+{
+  "resumes": [
+    "resumes/01-default.yaml"
+  ],
+  "projects": [
+    "projects/01-lantu-sdk.yaml",
+    "projects/02-byd-lora.yaml",
+    "projects/03-aadk.yaml",
+    "projects/04-multimodal-memory.yaml",
+    "projects/05-soc-build.yaml"
+  ],
+  "internships": [
+    "internships/01-banma.yaml"
+  ],
+  "honors": [
+    "honors.yaml"
+  ]
+}
