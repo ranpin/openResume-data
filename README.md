@@ -1,4 +1,4 @@
-# resume-data
+# openResume-data
 
 [ranpin/openResume](https://github.com/ranpin/openResume)（简历中心 SPA）的**数据仓库**——与代码仓库隔离，简历与经历库内容持久化在这里，应用运行时从本仓库拉取。
 
@@ -14,7 +14,7 @@ honors.yaml         # 经历库 · 荣誉（单文件数组）
 
 ## 读写链路
 
-- **读**：应用从 `https://raw.githubusercontent.com/ranpin/resume-data/main/index.json` 取清单，再并行拉取各 YAML。
+- **读**：应用从 `https://raw.githubusercontent.com/ranpin/openResume-data/main/index.json` 取清单，再并行拉取各 YAML。
 - **写**：在应用编辑器内「发布到线上」——浏览器直连 GitHub Contents API 提交 YAML（BYO Token，令牌只存发布者本地浏览器），约 1 分钟后生效。新建简历的发布会同步更新 `index.json`。
 
 ## 复用自己的数据
