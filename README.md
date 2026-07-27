@@ -1,6 +1,6 @@
 # resume-data
 
-[ranpin/resume](https://github.com/ranpin/resume)（简历中心 SPA）的**数据仓库**——与代码仓库隔离，简历与经历库内容持久化在这里，应用运行时从本仓库拉取。
+[ranpin/openResume](https://github.com/ranpin/openResume)（简历中心 SPA）的**数据仓库**——与代码仓库隔离，简历与经历库内容持久化在这里，应用运行时从本仓库拉取。
 
 ## 结构
 
@@ -19,4 +19,4 @@ honors.yaml         # 经历库 · 荣誉（单文件数组）
 
 ## 复用自己的数据
 
-fork [ranpin/resume](https://github.com/ranpin/resume) 后，修改代码仓库 `src/data/source.ts` 指向你自己的数据仓库（或置空进入纯本地模式，数据只存浏览器 IndexedDB）。
+fork [ranpin/openResume](https://github.com/ranpin/openResume) 后，修改代码仓库 `src/data/source.ts` 指向你自己的数据仓库（或置空进入纯本地模式，数据只存浏览器 IndexedDB）。
