@@ -1,6 +1,7 @@
 title: 端侧智能AADK框架开发
 period: 2025.12 - 2026
 status: 持续迭代
+featured: true
 tags: [C++, 设计模式, 异步编程, Agent框架]
 github: ''
 demo: ''
