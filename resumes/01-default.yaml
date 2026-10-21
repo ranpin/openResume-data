@@ -1,6 +1,6 @@
 label: 端侧大模型工程师
 target: 大模型 / AI Agent 工程方向
-updated: 2026-07
+updated: 2026-10
 basics:
   name: Ranpin
   title: 端侧大模型工程 / AI Agent 工程师
@@ -29,6 +29,20 @@ work:
       - 建立 AADK 框架，支持多种 Agent 场景快速开发，沉淀开发指南与 API 文档
       - 通过模型替换、图像预处理优化等手段累计提升推理速度数百毫秒，解决 TPS 持续下降问题
 projects:
+  - name: 视觉扩散策略的压缩与边缘部署（HomeBot-WM · 个人项目）
+    role: 独立完成
+    period: '2026.10'
+    tech:
+      - PyTorch
+      - ONNX
+      - TensorRT
+      - INT8 量化
+      - Jetson Orin
+    highlights:
+      - 单张 8GB RTX 3070 从零训练 262M 视觉扩散策略（Diffusion Policy，image Push-T），DDPM-100 达 87.6%
+      - 打通「ONNX 拆分导出（FP32 parity 1.4e-6）→ INT8 静态量化（模型 ~4× 压缩）→ DDIM 减步 → TensorRT」压缩链并部署到 Jetson AGX Orin
+      - Orin 全墙钟实测：DDIM-16 FP16 12Hz / INT8 18Hz；确认 DDIM 为唯一可行减步采样器（DDPM 抽稀即崩溃，两种子复现）
+      - 闭环精度实测 TRT 原生 INT8 较 FP16 掉 ~0.12（6 噪声种子配对，p<0.001），据此给出速度↔精度部署权衡；公开仓库 + 在线报告 + demo 视频全程可复现
   - name: Lantu 基座大模型 SDK 开发与联调
     role: SDK 开发负责人
     period: 2026.03 - 2026.04
